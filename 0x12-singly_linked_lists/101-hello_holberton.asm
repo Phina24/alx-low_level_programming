@@ -4,9 +4,9 @@ global main ;a 64-bit program in assembly
 
 section .text
 main:
-	push msg
-	call printf
-	ret
-
-section .data
-msg: db 'Hello, Holberton0xa',0
+	mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
