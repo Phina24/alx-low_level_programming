@@ -9,4 +9,4 @@ main:
 	ret
 
 section .data
-msg: db 'Hello, Holberton',10, 0
+msg: db 'Hello, Holberton',0xa
