@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /*
  * _puts_recursion = This is a function that prints a string with new line.
@@ -10,8 +10,8 @@ void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		putchar(*s);
+		_putchar(*s);
 		_puts_recursion(++s);
 	}
-	putchar('\n');
+	_putchar('\n');
 }

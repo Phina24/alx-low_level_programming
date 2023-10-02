@@ -26,6 +26,6 @@ int main_prime(int n, int a)
 		return (1);
 	if (n % a == 0 && a > 0)
 		return (0);
-	return (actual_prime(n, a - 1));
+	return (main_prime(n, a - 1));
 }
 

@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_palidrome(char *s, int a, int len);
+int check_palindrome(char *s, int a, int len);
 int _strlen(char *s);
 
 /**
@@ -40,6 +40,6 @@ int check_palindrome(char *s, int a, int len)
 		return (0);
 	if (a >= len)
 		return (1);
-	return (check_pal(s, a + 1, len - 1));
+	return (check_palindrome(s, a + 1, len - 1));
 }
 
